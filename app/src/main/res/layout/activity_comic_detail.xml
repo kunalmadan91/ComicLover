@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/rootLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    app:expandedTitleMarginStart="60dp">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_height="255dp"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+
+                app:layout_collapseMode="parallax"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.kunalmadan.android.comiclover.ComicDetail">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/title"
+                android:text="@string/title"
+               android:layout_alignParentStart="true"
+                android:paddingStart="@dimen/padding_start_10"
+                android:paddingTop="@dimen/heading_padding_top"
+                android:textStyle="bold"
+                android:textSize="@dimen/heading_text"
+                android:elevation="@dimen/elevation_std"
+                android:textColor="@color/generic_text_color"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/detail_title"
+                android:layout_below="@id/title"
+                android:elevation="@dimen/elevation_std"
+                android:textSize="@dimen/detail_text"
+                android:paddingStart="@dimen/padding_start_10"
+                android:textColor="@color/generic_text_color"/>
+
+            <View android:layout_width="fill_parent"
+                android:id="@+id/view1"
+                android:layout_height="@dimen/view_height"
+                android:layout_below="@id/detail_title"
+                android:background="@color/view_background"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/onsaledatetext"
+                android:text="@string/onsaledate"
+                android:layout_below="@+id/view1"
+                android:paddingStart="@dimen/padding_start_10"
+                android:paddingTop="@dimen/heading_padding_top"
+                android:textStyle="bold"
+                android:textSize="@dimen/heading_text"
+                android:elevation="@dimen/elevation_std"
+                android:textColor="@color/generic_text_color"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/onsaledate"
+                android:layout_below="@id/onsaledatetext"
+                android:elevation="@dimen/elevation_std"
+                android:textSize="@dimen/detail_text"
+                android:paddingStart="@dimen/padding_start_10"
+                android:paddingBottom="@dimen/padding_bottom_5"
+                android:textColor="@color/generic_text_color"/>
+
+            <View android:layout_width="fill_parent"
+                android:id="@+id/view3"
+                android:layout_height="@dimen/view_height"
+                android:layout_below="@id/onsaledate"
+                android:background="@color/view_background"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/diamond"
+                android:text="@string/diamond_code"
+                android:layout_below="@+id/view3"
+                android:paddingStart="@dimen/padding_start_10"
+                android:paddingTop="@dimen/heading_padding_top"
+                android:textStyle="bold"
+                android:textSize="@dimen/heading_text"
+                android:elevation="@dimen/elevation_std"
+                android:textColor="@color/generic_text_color"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/diamondCode"
+                android:layout_below="@id/diamond"
+                android:elevation="@dimen/elevation_std"
+                android:textSize="@dimen/detail_text"
+                android:paddingBottom="@dimen/padding_bottom_5"
+                android:paddingStart="@dimen/padding_start_10"
+                android:textColor="@color/generic_text_color"/>
+
+            <View android:layout_width="fill_parent"
+                android:id="@+id/view4"
+                android:layout_height="@dimen/view_height"
+                android:layout_below="@id/diamondCode"
+                android:background="@color/view_background"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/issue"
+                android:text="@string/issue_number"
+                android:layout_below="@+id/view4"
+                android:paddingStart="@dimen/padding_start_10"
+                android:paddingTop="@dimen/heading_padding_top"
+                android:textStyle="bold"
+                android:textSize="@dimen/heading_text"
+                android:elevation="@dimen/elevation_std"
+                android:textColor="@color/generic_text_color"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/issueNumber"
+                android:layout_below="@id/issue"
+                android:elevation="@dimen/elevation_std"
+                android:textSize="@dimen/detail_text"
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/generic_text_color"/>
+
+            <View android:layout_width="fill_parent"
+                android:id="@+id/view2"
+                android:layout_height="@dimen/view_height"
+                android:layout_below="@id/issueNumber"
+                android:background="@color/view_background"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/descriptiontext"
+                android:text="@string/description"
+                android:layout_below="@+id/view2"
+                android:paddingStart="@dimen/padding_start_10"
+                android:paddingTop="@dimen/heading_padding_top"
+                android:textStyle="bold"
+                android:textSize="@dimen/heading_text"
+                android:elevation="@dimen/elevation_std"
+                android:textColor="@color/generic_text_color"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/desc"
+                android:layout_below="@id/descriptiontext"
+                android:elevation="@dimen/elevation_std"
+                android:textSize="@dimen/detail_text"
+                android:paddingStart="@dimen/padding_start_10"
+                android:paddingBottom="@dimen/padding_bottom_10"
+                android:textColor="@color/generic_text_color"/>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

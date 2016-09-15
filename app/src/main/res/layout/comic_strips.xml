@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="6dip"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:fontFamily="@string/font_family"
+        android:textSize="@dimen/strip_title_size"
+        android:layout_width="0dp"
+        android:paddingStart="@dimen/padding_start_5"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_start_10"
+        android:paddingEnd="@dimen/padding_end_5"
+        android:textStyle="italic"
+        android:fontFamily="@string/font_family"
+        android:textAppearance="?android:textAppearanceSmall"/>
+</LinearLayout>

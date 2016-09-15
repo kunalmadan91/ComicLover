@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/link_broken"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Error Icon -->
+    <ImageView android:src="@drawable/error_cloud"
+        android:layout_width="@dimen/error_img_width"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/error"/>
+
+    <!-- Unable to connect -->
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_error"
+        android:gravity="center"
+        android:text="@string/link_broken"
+        android:textSize="@dimen/summary_size"/>
+
+    <!-- Try again -->
+
+</LinearLayout>

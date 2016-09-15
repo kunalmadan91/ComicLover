@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ComicLover</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_hero_detail">HeroComicDetail</string>
+    <string name="text_not_available">NA</string>
+    <string name="currency">$</string>
+    <string name="font_family">sans-serif-condensed</string>
+    <string name="strip_title_style">bold</string>
+    <string name="description_not_available">Oops!!..description not Available!!</string>
+    <string name="title_activity_add">AddActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="link_broken">Oops! The link seems to be broken!!.Please try after some time..</string>
+    <string name="error">Error</string>
+    <string name="internet_error">Oops! Something went wrong.\nPlease check your internet connection.</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="title">Title</string>
+    <string name="onsaledate">On Sale Date</string>
+    <string name="description">Description</string>
+    <string name="issue_number">Issue Number</string>
+    <string name="diamond_code">Diamond Code</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="superhero">SuperHero Name</string>
+    <string name="widget_title">Super Hero</string>
+</resources>
