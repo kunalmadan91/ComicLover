@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "1039223443688",
+    "project_id": "firebase-comiclover"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039223443688:android:03df91e0d4d3dad5",
+        "android_client_info": {
+          "package_name": "com.kunalmadan.android.comiclover"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTdpsM3BuYeaXZKI6D8ugCeW7ShRV6oiY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-82900340-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
